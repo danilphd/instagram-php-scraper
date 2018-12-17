@@ -629,7 +629,7 @@ class Instagram
      * @return Comment[]
      * @throws InstagramException
      */
-    public function getMediaCommentsByCode($code, $count = 10, $maxId = null)
+    public function getMediaCommentsByCode($code, $count = 10, &$maxId = null)
     {
         $comments = [];
         $index = 0;
